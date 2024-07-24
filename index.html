@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/index.js"></script>
+</head>
+<body>
+    <div id="container">
+        <h1 id="title">PDF Viewer</h1>
+        <div id="toolbar">
+            <button id="download">Download PDF</button>
+            <button id="upload">
+                Upload & Read PDF
+                <input type="file" accept=".pdf" id="file-uploader"/>
+            </button>
+        </div>
+
+        <div id="file-info">
+            <p id="filename">No file uploaded</p>
+            <p>||</p>
+            <p id="size">Size 00.00Mb</p>
+        </div>
+        <iframe src="pdf/html_tutorial.pdf" frameborder="0" id="pdf-frame"></iframe>
+
+    </div>
+</body>
+</html>
